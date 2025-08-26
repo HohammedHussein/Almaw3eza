@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="قرأن كريم" />
+
+    <title>الموعظة</title>
+
+    <!-- thuluth decorated Font-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.fontstatic.com/f=thuluth-decorated"
+    />
+    <!-- Cairo Font-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.fontstatic.com/f=cairo-bold"
+    />
+    <!-- Font AWesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+
+    <!-- Main Style -->
+    <!-- <link rel="stylesheet" href="./fonts/all.min.css"> -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="scroll-top">
+      <i class="fa-solid fa-angles-up"></i>
+    </div>
+    <!-- start header section -->
+    <header class="header">
+      <div class="container">
+        <div class="logo">الموعظة</div>
+        <ul class="nav-pc">
+          <li data-filter="main" class="active">الصفحة الرئيسية</li>
+          <li data-filter="hadith">احاديث</li>
+          <li data-filter="lectures">المحاضرات</li>
+          <li data-filter="Quran">القرآن الكريم</li>
+          <li data-filter="pray">اوقات الصلاة</li>
+          <li data-filter="footer">تواصل معنا</li>
+        </ul>
+
+        <div class="bars">
+          <i class="fas fa-bars"></i>
+        </div>
+
+        <!-- nav in mobile -->
+        <ul class="nav-mobile">
+          <li data-filter="main" class="active">الصفحة الرئيسية</li>
+          <li data-filter="hadith">احاديث</li>
+          <li data-filter="lectures">المحاضرات</li>
+          <li data-filter="Quran">القرآن الكريم</li>
+          <li data-filter="pray">اوقات الصلاة</li>
+          <li data-filter="footer">تواصل معنا</li>
+        </ul>
+      </div>
+    </header>
+    <!-- end header section -->
+
+    <!-- start Hero section -->
+    <section class="main">
+      <div class="container">
+        <div class="title fade">
+          <h1>مرحبا بك في الموعظة الاسلامي</h1>
+          <button class="btn">
+            ابدأ التصفح
+            <i class="fa fa-caret-left"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero section -->
+
+    <!-- start Hadith section -->
+    <section class="hadith fade">
+      <h3 class="custome-tilte">أحاديث</h3>
+      <div class="container">
+        <div class="hadith-container">
+          <div class="number">
+            <span class="total"></span> / <span class="current"></span>
+          </div>
+          <p></p>
+        </div>
+        <div class="buttons">
+          <button type="button" class="prev">السابق</button>
+
+          <button type="button" class="next">التالي</button>
+        </div>
+      </div>
+    </section>
+    <!-- End Hadith section -->
+
+    <!-- start lectures section -->
+    <section class="lectures fade">
+      <h3 class="custome-tilte">محاضرات</h3>
+      <div class="container">
+        <div class="lectures-container">
+          <div class="left">
+            <iframe
+              src="https://www.youtube.com/embed/SPBpxcP87jg"
+              frameborder="0"
+            ></iframe>
+            <p>محاضرة شيقة من د/حازم شومان</p>
+          </div>
+          <div class="right">
+            <div class="lect">
+              <div class="lect-text">
+                <h3>لماذا نزل القران عربيا</h3>
+                <p>محاضرة رائعة من تقديم الشيخ الشعراوي</p>
+              </div>
+              <div class="lect-image">
+                <img src="images/sha.jpg" alt="" />
+              </div>
+            </div>
+            <div class="lect">
+              <div class="lect-text">
+                <h3>لماذا نزل القران عربيا</h3>
+                <p>محاضرة رائعة من تقديم الشيخ الشعراوي</p>
+              </div>
+              <div class="lect-image">
+                <img src="images/sha.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End lectures section-->
+
+    <!-- start Quran Section -->
+    <section class="Quran fade">
+      <h3 class="custome-tilte">القرآن الكريم</h3>
+      <div class="container" style="position: relative">
+        <div class="surhasContainer"></div>
+      </div>
+    </section>
+    <!-- End Quran Section -->
+
+    <!-- start pop up    -->
+    <div class="surah-popup">
+      <div class="close">
+        <i class="fa-solid fa-close"></i>
+      </div>
+
+      <div class="ayah"></div>
+    </div>
+    <!-- End pop up    -->
+
+    <!-- start pray times Section -->
+    <section class="pray fade">
+      <h3 class="custome-tilte">اوقات الصلاة</h3>
+      <div class="container">
+        <div class="cards">
+          <div class="card">
+            <div class="circle">
+              <svg>
+                <circle cx="100" cy="100" r="100"></circle>
+              </svg>
+              <div class="pray-time">59 : 11</div>
+            </div>
+            <p>العصر</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end pray times Section -->
+
+    <!-- start footer  -->
+    <section class="footer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 180">
+        <path
+          fill-opacity="1"
+          d="M0,192L48,176C96,160,192,128,288,101.3C384,75,480,53,576,64C672,75,768,117,864,122.7C960,128,1056,96,1152,74.7C1248,53,1344,43,1392,37.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+
+      <div class="footer_links">
+        <a href="https://wa.me/01141547840" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/mohammed-hussein-69a80b345/"
+          target="_blank"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+      <div class="author">Created By Mohammed Hussein</div>
+    </section>
+    <!-- end footer  -->
+    <script src="./js/hadith.js"></script>
+  </body>
+</html>
