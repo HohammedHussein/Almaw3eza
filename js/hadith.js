@@ -108,7 +108,7 @@ links.forEach((a) => {
 
 function QuranApi() {
   // fetch surahs  meta  data {name of surahs}
-  fetch(`http://api.alquran.cloud/v1/meta`)
+  fetch(`https://api.alquran.cloud/v1/meta`)
     .then((res) => res.json())
     .then((data) => {
       data = data.data.surahs.references;
@@ -149,7 +149,7 @@ function displaySurahs(surahs) {
   surah.forEach((title, index) => {
     title.addEventListener("click", () => {
       ayahs.innerHTML = "";
-      fetch(`http://api.alquran.cloud/v1/surah/${index + 1}`)
+      fetch(`https://api.alquran.cloud/v1/surah/${index + 1}`)
         .then((response) => response.json())
         .then((data) => {
           const ayahData = data.data.ayahs;
