@@ -13,25 +13,6 @@
   --bg-green-4: rgba(76, 175, 88, 0.4);
 }
 
-/* Skip link for accessibility */
-.skip-link {
-  position: absolute;
-  top: -40px;
-  left: 10px;
-  background: var(--green);
-  color: var(--white);
-  padding: 8px 16px;
-  text-decoration: none;
-  border-radius: 4px;
-  z-index: 10000;
-  transition: top 0.3s ease;
-}
-
-.skip-link:focus {
-  top: 10px;
-  outline: 2px solid var(--white);
-  outline-offset: 2px;
-}
 * {
   padding: 0;
   margin: 0;
