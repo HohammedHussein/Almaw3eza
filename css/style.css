@@ -32,9 +32,6 @@ textarea:focus-visible {
   outline-offset: 2px;
   border-radius: 3px;
 }
-::-webkit-scrollbar {
-  width: 0;
-}
 
 body {
   direction: rtl;
@@ -438,18 +435,7 @@ a:focus-visible {
   background-color: var(--white);
   transition: 0.5s transform ease-in-out;
 }
-.surah-popup::-webkit-scrollbar {
-  background-color: var(--white);
-  width: 3px;
-}
-.surah-popup::-webkit-scrollbar-track:hover {
-  width: 30px;
-}
 
-.surah-popup::-webkit-scrollbar-thumb {
-  background-color: rgb(97, 97, 97);
-  border-radius: 10px;
-}
 .surah-popup.active {
   transform: translateX(0);
 }
