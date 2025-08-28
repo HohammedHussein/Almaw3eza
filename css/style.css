@@ -1,3 +1,10 @@
+/*
+  * Prefixed by https://autoprefixer.github.io
+  * PostCSS: v8.4.14,
+  * Autoprefixer: v10.4.7
+  * Browsers: >0.5%,last 2 versions,not dead
+  */
+
 /* global style */
 :root {
   --black: #232323;
@@ -353,9 +360,11 @@ a:focus-visible {
   width: 120px;
   height: 120px;
   border-radius: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 .left {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
@@ -440,6 +449,7 @@ a:focus-visible {
   transform: translateX(0);
 }
 .surah-popup .close {
+  position: -webkit-sticky;
   position: sticky;
   top: 5px;
   right: 10px;
@@ -510,7 +520,13 @@ a:focus-visible {
   transform: translate(5px, 5px);
   stroke-dasharray: 2;
   stroke-dashoffset: 10002;
+  -webkit-animation: dash 2s linear infinite;
   animation: dash 2s linear infinite;
+}
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 @keyframes dash {
   to {
@@ -618,7 +634,7 @@ a:focus-visible {
     left: 0;
     border-radius: 0 0 8px 0;
     width: 230px;
-    height: 300px;
+
     align-items: center;
     transform: translateX(-100%);
     transition: all 0.5s ease-out;
