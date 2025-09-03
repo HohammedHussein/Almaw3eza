@@ -38,8 +38,6 @@ Contributions, suggestions, and feedback are welcome! Feel free to open an issue
 
 ## License
 
-This project is open source 
-
----
+This project is open source
 
 **Explore the live app:** [https://hohammedhussein.github.io/Almaw3eza](https://hohammedhussein.github.io/Almaw3eza)
