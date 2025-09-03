@@ -1,4 +1,4 @@
-const CACHE_NAME = "AlmaW3eza";
+const CACHE_NAME = "AlmaW3eza-v1";
 const MAX_ENTRIES = 1000;
 
 self.addEventListener("install", (event) => {
