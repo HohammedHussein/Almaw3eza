@@ -1,3 +1,10 @@
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker
+    .register("/sw.js", { scope: "/" })
+    .then((reg) => console.log("SW registered, scope:", reg.scope))
+    .catch((err) => console.error("SW register failed:", err));
+}
+
 // ===== Scroll Behavior =====
 const fixedNav = document.querySelector(".header");
 const scrollTopBtn = document.querySelector(".scroll-top");
