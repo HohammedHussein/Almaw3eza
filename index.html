@@ -29,7 +29,7 @@
       defer
     />
 
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preload" href="style.css" as="style" />
     <title>الموعظة</title>
   </head>
   <body>
@@ -227,5 +227,13 @@
     </section>
     <!-- end footer  -->
     <script src="./js/hadith.js" defer></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("./sw.js")
+          .then((reg) => console.log("SW registered, scope:", reg.scope))
+          .catch((err) => console.error("SW register failed:", err));
+      }
+    </script>
   </body>
 </html>
